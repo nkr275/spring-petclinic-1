@@ -5,6 +5,11 @@ node('maven') {
 	  git 'https://github.com/GitPracticeRepo/spring-petclinic.git'
    }
    
+   stage ('clean the build') {
+      // mvn clean
+	  sh 'mvn clean'
+   }
+   
    stage ('build the packages') {
       // mvn package
 	  sh 'mvn package'
