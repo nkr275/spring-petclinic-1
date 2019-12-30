@@ -2,7 +2,7 @@ node('maven') {
 	
    stage('SCM') {
       // git clone
-	  git 'https://github.com/GitPracticeRepo/spring-petclinic.git'
+	  git 'https://github.com/nkr275/spring-petclinic-1.git'
    }
    
    stage ('clean the build') {
